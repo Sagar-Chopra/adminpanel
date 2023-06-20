@@ -5,6 +5,11 @@ const useChart = () => {
   const chartRef = useRef(null);
 
   useEffect(() => {
+    
+    const handleResize = (chart) => {
+      chart.resize();
+    };
+
     const loadChart = async () => {
       if (typeof window !== "undefined") {
         Chart.defaults.font.family =
@@ -53,6 +58,9 @@ const useChart = () => {
             ],
           },
           options: {
+            responsive: true,
+            onResize: handleResize,
+            maintainAspectRatio: true,
             scales: {
               x: {
                 time: {

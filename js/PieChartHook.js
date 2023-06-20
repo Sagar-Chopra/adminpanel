@@ -15,6 +15,10 @@ const usePieChart = () => {
 
         new Chart(ctx, {
           type: "pie",
+          options: {
+            aspectRatio:2.1,
+            responsive: true,
+          },
           data: {
             labels: ["Blue", "Red", "Yellow", "Green"],
             datasets: [
