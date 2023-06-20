@@ -2,10 +2,10 @@ import { useEffect } from "react";
 require("../src/app/globals.css");
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
-import useChart from "./js/AreaChartHook";
-import useBarChart from "./js/BarChartHook";
+import useChart from "../js/AreaChartHook";
+import useBarChart from "../js/BarChartHook";
 import Footer from "./footer";
-import Table from "./js/Table";
+import Table from "../js/Table";
 
 export default function Home() {
   const chartRef = useChart();

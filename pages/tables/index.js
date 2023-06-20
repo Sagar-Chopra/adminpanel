@@ -5,7 +5,7 @@ import Sidebar from "../sidebar";
 import { DataTable } from "simple-datatables";
 import "datatables.net-dt/css/jquery.dataTables.css";
 import Link from "next/link";
-import Table from "../js/Table";
+import Table from "../../js/Table";
 
 const Tables = () => {
   useEffect(() => {

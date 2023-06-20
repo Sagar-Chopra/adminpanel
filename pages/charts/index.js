@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../navbar";
 import Sidebar from "../sidebar";
-import useChart from "../js/AreaChartHook";
-import useBarChart from "../js/BarChartHook";
-import usePieChart from "../js/PieChartHook";
+import useChart from "../../js/AreaChartHook";
+import useBarChart from "../../js/BarChartHook";
+import usePieChart from "../../js/PieChartHook";
 import Link from "next/link";
 import Footer from "../footer";
 
